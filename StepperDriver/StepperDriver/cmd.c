@@ -9,8 +9,6 @@
 
 uint8_t get_cmd_size(uint8_t cmd){
     uint8_t size = 0;
-    switch(cmd){
-        
-    }
+    (void)cmd;
     return size;
 }

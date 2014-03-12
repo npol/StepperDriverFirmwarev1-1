@@ -9,4 +9,6 @@
 #include <avr/io.h>
 #include "cmd.h"
 
-void init_UART(void);
+void init_UART(uint16_t baud_prescaler, uint8_t multiplier);
+uint8_t UART_Receive(void);
+void UART_Transmit(uint8_t data);

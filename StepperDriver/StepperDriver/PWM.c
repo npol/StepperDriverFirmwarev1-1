@@ -23,9 +23,10 @@ ISR(PCINT0_vect){
     return;
 }
 
-ISR(InputChangeVector){             /* Read duty cycle on falling edge */
-    uint16_t duty = ICR1;
-    /* Translate ICR1 into N-step */
-    return;
-}
+//ISR(PCINT0_vect){             /* Read duty cycle on falling edge */
+//    uint16_t duty = ICR1;
+//    (void)duty;
+//    /* Translate ICR1 into N-step */
+//    return;
+//}
 

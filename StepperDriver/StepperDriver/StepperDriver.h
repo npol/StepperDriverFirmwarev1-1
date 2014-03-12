@@ -4,10 +4,11 @@
  * Created: 1/3/2014 9:16:21 PM
  *  Author: Nishant Pol
  */ 
-
+#define F_CPU 1000000
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
+#include <util/delay.h>
 
 #include "PWM.h"
 #include "StepDir.h"

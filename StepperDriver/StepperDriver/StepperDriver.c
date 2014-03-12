@@ -46,8 +46,16 @@ int main(void)
     sei();
     while(1)
     {
-        //TODO:: Please write your application code 
+        normstep1();
+        _delay_ms(100);
+        normstep2();
+        _delay_ms(100);
+        normstep3();
+        _delay_ms(100);
+        normstep4(); 
+        _delay_ms(100);
     }
+    return 0;
 }
 
 inline static void init_interface(void){
@@ -56,11 +64,11 @@ inline static void init_interface(void){
     if(Select == 0b00){         /* PWM */
         init_pwm();
     } else if(Select == 0b01){  /* UART */
-        init_UART();
+        //init_UART();
     } else if(Select == 0b10){  /* I2C */
-        init_I2C();
+        //init_I2C();
     } else if(Select == 0b11){  /* SPI */
-        init_SPI();
+        //init_SPI();
     }
     return;
 }
@@ -69,7 +77,7 @@ inline static void init_interface(void){
 /* Half step mode */
 inline static void init_stepper(void){
     DDRD = (1<<A)|(1<<B)|(1<<C)|(1<<D)|(1<<ABINH)|(1<<CDINH);
-    halfstep1();
+    //halfstep1();
 }
 
 inline static void halfstep1(void){

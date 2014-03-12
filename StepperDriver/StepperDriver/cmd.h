@@ -9,4 +9,4 @@
 #include <avr/io.h>
 
 uint8_t get_cmd_size(uint8_t cmd);
-void proc_cmd(uint)
+//void proc_cmd(uint8_t cmd);
