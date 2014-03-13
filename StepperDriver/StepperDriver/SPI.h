@@ -7,6 +7,13 @@
 
 
 #include <avr/io.h>
+#include <avr/interrupt.h>
 #include "cmd.h"
 
+#define MOSI PINB3
+#define MISO PINB4
+#define SCK PINB5
+
 void init_SPI(void);
+uint8_t SPI_Receive(void);
+void SPI_Transmit(uint8_t data);

@@ -10,8 +10,10 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 
-#include "PWM.h"
-#include "StepDir.h"
+#include "StepDir_PWM.h"
+#include "UART.h"
+#include "SPI.h"
+#include "I2C.h"
 
 /** Pinout **/
 
@@ -29,4 +31,6 @@
 
 #define SEL1 PINB1
 #define SEL2 PINB2
+
+
  
